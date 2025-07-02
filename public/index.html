@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="input-group">
+        <label for="jid">JID:</label>
+        <input type="text" id="jid" name="jid" placeholder="user@example.com" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="input-group">
+        <label for="server">Server (WebSocket URL):</label>
+        <input type="text" id="server" name="server" placeholder="wss://example.com:5443/ws" required>
+      </div>
+      <div class="input-group">
+        <label for="resource">Resource (optional):</label>
+        <input type="text" id="resource" name="resource" placeholder="browser-client">
+      </div>
+      <button type="submit">Login</button>
+    </form>
+    <p id="error-message"></p>
+  </div>
+  <script src="bundle.js"></script>
+</body>
+</html>
