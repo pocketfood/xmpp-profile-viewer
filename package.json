@@ -1,0 +1,19 @@
+{
+  "name": "xmpp-login",
+  "version": "1.0.0",
+  "description": "xmpp-login",
+  "main": "main.js",
+  "scripts": {
+    "build": "browserify main.js -o bundle.js"
+  },
+  "author": "pocketfood",
+  "license": "ISC",
+  "dependencies": {
+    "@xmpp/client": "^0.13.1",
+    "@xmpp/debug": "^0.13.0",
+    "stanza": "^12.20.0"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0"
+  }
+}
